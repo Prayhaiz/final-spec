@@ -1,0 +1,166 @@
+/*Fonts size and colors used throughout the design
+ font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+#824936 
+#222C2A
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::before , *::after {
+    box-sizing: inherit;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.row  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col {
+    text-align: left;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+}
+
+section {
+    padding: 4em 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.intro {
+    background-color: #F3EED9;
+    min-height: 660px;
+}
+
+.mute--text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    opacity: .55;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.tittle-text {
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    color: #824936;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.sub__tittle--text {
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #824936;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.col + .col {
+    margin-left: 2em;
+}
+
+.middle {
+    background-color: #222C2A;
+}
+.more--color {
+    color: #fff;
+    text-shadow: #824936;
+}
+
+.side--text {
+    color: #fff;
+}
+
+.middle .side--text {
+    padding-bottom: 2em;
+}
+
+.footer {
+    background-color: #824936;
+    padding: 2em 0;
+}
+
+.footer img {
+    padding-top: 3em;
+}
+
+.footer .sub__tittle--text {
+    padding-top: 1em;
+}
+
+.footer .side--text {
+    color: #fff;
+}
+
+@media (min-width:  800px) {
+
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 21px;
+    }
+
+   .center--middle .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+   }
+
+    .middle .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .middle .container .text {
+        padding-right: 2em;
+    }
+
+    .middle .container .text .sub__tittle--text {
+        text-align: left;
+    }
+
+    .footer .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer .container .text {
+        padding-left: 2em;
+    }
+
+    .footer .container .text .sub__tittle--text {
+        text-align: left;
+    }
+
+    .footer img {
+        padding-bottom: 2em;
+    }
+}
